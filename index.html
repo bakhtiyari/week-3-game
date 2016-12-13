@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>Hangman Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+</head>
+
+<body>
+	<div class="wrapper">
+
+	   <h1>HANGMAN</h1>
+
+	    <h2>Countries</h2>
+
+	    <button id="playButton"  type="button" class="btn btn-info" ">Play</button>
+
+	    <h3 id="startMessage">Press a Letter To Get Started</h3>
+
+	    <p>Number of Wins</p>
+
+	    <p id="numWins">0</p>
+
+	    <p>Current Word</p>
+
+	    <ul id="ulTemplate">
+
+		</ul>
+
+		<p>Number of Guesses Remaining</p>
+
+		<p id="remainingGuesses"></p>
+
+		<p>Wrong Letters Already Guessed</p>
+
+		<ul id="ulWrongletters">
+
+		</ul>
+
+		<p id="wonMsg"></p>
+
+		<p id="lostMsg"></p>
+
+		<p id="theCountry"></p>
+
+	</div>
+
+	<!-- script tag should be at the bottom of the body so it can change the body after it has been loaded -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
